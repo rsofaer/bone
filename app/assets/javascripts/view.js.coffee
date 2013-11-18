@@ -3,5 +3,7 @@ class App.View extends Backbone.View
     # Return ourself for chaining
     _.tap @, =>
       # Render our template, using our model's attributes if available
-      @$el.html @template @model?.attributes
+      # as well as any helpers
+      attrs = _.cloneDeep (@model?.attributes || {})
+      @$el.html @template _.extend attrs, @helpers
 

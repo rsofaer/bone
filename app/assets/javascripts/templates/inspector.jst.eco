@@ -1,1 +1,8 @@
-Thing Inspector
+<% if @thing: %>
+  Inspecting a thing
+<% else: %>
+  <h4>
+    No thing selected
+  </h4>
+<% end %>
+
