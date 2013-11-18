@@ -1,7 +1,9 @@
+#= require_tree ./templates
 #= require jquery
 #= require lodash
 #= require backbone
 #= require app
+#= require view
 #= require_tree .
 #= require_self
 
