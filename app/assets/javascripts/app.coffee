@@ -29,7 +29,7 @@ window.App =
 
     @uncheckedThingsView = new @Views.Things
       el: '#unchecked-things'
-      thingStatue: 'unchecked'
+      thingState: 'unchecked'
       collection: @things
     .render()
 
